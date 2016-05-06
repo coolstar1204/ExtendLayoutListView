@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:background="#666666"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/top_left"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="3dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/top_right"
+            android:src="@mipmap/menu"
+            android:layout_margin="3dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/title_demo"
+            android:layout_toRightOf="@id/top_left"
+            android:layout_toLeftOf="@id/top_right"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="#7F882211"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bottompanel"
+        android:background="#7F993388"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text="@string/bottom_demo"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:text="上一曲"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:background="#AAAAAA"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="播放"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:background="#888888"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="下一曲"
+                android:textColor="@android:color/white"
+                android:background="#AAAAAA"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_margin="5dp"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:textSize="14sp"
+            android:text="@string/app_demo"
+            android:padding="2dp"
+            android:drawablePadding="3dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/sdlistview"
+        android:layout_above="@id/bottompanel"
+        android:background="#552299"
+        android:layout_below="@id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>

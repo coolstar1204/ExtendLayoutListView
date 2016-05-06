@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExtendLayoutListView</string>
+    <string name="btn_touchlist">通过触摸事件判断方向的listview</string>
+    <string name="btn_scrolllist">通过滚动事件判断方向的listview</string>
+    <string name="title_demo">这里是标题栏内容文字</string>
+    <string name="bottom_demo">这里是下面板的标题区文字，为了撑空间</string>
+    <string name="app_demo">中华人民共和国是1949年成立的，但中国人民是有五千年文化的人民，历史但中国人民是有五千年文化的人民，历史中中华人民共和国是1949年成立的，但中国人民是有五千年文化的人民，历史中</string>
+</resources>
